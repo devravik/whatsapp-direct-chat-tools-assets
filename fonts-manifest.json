@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "fonts": [
+    {
+      "name": "Inter",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf",
+      "fontVersion": 2,
+      "displayName": "Inter",
+      "fallback": "System",
+      "tags": ["sans-serif", "business", "modern"]
+    },
+    {
+      "name": "Poppins",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/poppins/Poppins-Regular.ttf",
+      "fontVersion": 2,
+      "displayName": "Poppins",
+      "fallback": "System",
+      "tags": ["sans-serif", "business", "modern"]
+    },
+    {
+      "name": "Montserrat",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/montserrat/Montserrat%5Bwght%5D.ttf",
+      "fontVersion": 2,
+      "displayName": "Montserrat",
+      "fallback": "sans-serif",
+      "tags": ["sans-serif", "business", "modern"]
+    },
+    {
+      "name": "Quicksand",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/quicksand/Quicksand%5Bwght%5D.ttf",
+      "fontVersion": 2,
+      "displayName": "Quicksand (Soft)",
+      "fallback": "sans-serif",
+      "tags": ["sans-serif", "modern", "playful"]
+    },
+    {
+      "name": "TenorSans",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/tenorsans/TenorSans-Regular.ttf",
+      "fontVersion": 2,
+      "displayName": "Tenor Sans",
+      "fallback": "sans-serif",
+      "tags": ["sans-serif", "business", "vintage"]
+    },
+    {
+      "name": "Anton",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/anton/Anton-Regular.ttf",
+      "fontVersion": 2,
+      "displayName": "Anton (Impact)",
+      "fallback": "sans-serif",
+      "tags": ["display", "bold", "modern"]
+    },
+    {
+      "name": "Syncopate",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/apache/syncopate/Syncopate-Regular.ttf",
+      "fontVersion": 2,
+      "displayName": "Syncopate (Wide)",
+      "fallback": "sans-serif",
+      "tags": ["display", "modern", "bold"]
+    },
+    {
+      "name": "AbrilFatface",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/abrilfatface/AbrilFatface-Regular.ttf",
+      "fontVersion": 2,
+      "displayName": "Abril Fatface",
+      "fallback": "serif",
+      "tags": ["display", "bold", "vintage"]
+    },
+    {
+      "name": "BebasNeue",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/bebasneue/BebasNeue-Regular.ttf",
+      "fontVersion": 2,
+      "displayName": "Bebas Neue",
+      "fallback": "sans-serif",
+      "tags": ["display", "bold", "modern"]
+    },
+    {
+      "name": "Orbitron",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/orbitron/Orbitron%5Bwght%5D.ttf",
+      "fontVersion": 2,
+      "displayName": "Orbitron (Futuristic)",
+      "fallback": "sans-serif",
+      "tags": ["display", "modern", "bold"]
+    },
+    {
+      "name": "PlayfairDisplay",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/playfairdisplay/PlayfairDisplay%5Bwght%5D.ttf",
+      "fontVersion": 2,
+      "displayName": "Playfair Display",
+      "fallback": "serif",
+      "tags": ["serif", "business", "vintage"]
+    },
+    {
+      "name": "Cinzel",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/cinzel/Cinzel%5Bwght%5D.ttf",
+      "fontVersion": 2,
+      "displayName": "Cinzel (Luxury)",
+      "fallback": "serif",
+      "tags": ["serif", "vintage", "business"]
+    },
+    {
+      "name": "Lora",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/lora/Lora%5Bwght%5D.ttf",
+      "fontVersion": 2,
+      "displayName": "Lora (Editorial)",
+      "fallback": "serif",
+      "tags": ["serif", "business", "vintage"]
+    },
+    {
+      "name": "BodoniModa",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/bodonimoda/BodoniModa%5Bopsz%2Cwght%5D.ttf",
+      "fontVersion": 2,
+      "displayName": "Bodoni (Fashion)",
+      "fallback": "serif",
+      "tags": ["serif", "vintage", "bold"]
+    },
+    {
+      "name": "GreatVibes",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/greatvibes/GreatVibes-Regular.ttf",
+      "fontVersion": 2,
+      "displayName": "Great Vibes (Script)",
+      "fallback": "serif",
+      "tags": ["script", "playful", "vintage"]
+    },
+    {
+      "name": "Pacifico",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/pacifico/Pacifico-Regular.ttf",
+      "fontVersion": 2,
+      "displayName": "Pacifico",
+      "fallback": "serif",
+      "tags": ["script", "playful", "bold"]
+    },
+    {
+      "name": "Lobster",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/lobster/Lobster-Regular.ttf",
+      "fontVersion": 2,
+      "displayName": "Lobster",
+      "fallback": "serif",
+      "tags": ["script", "playful", "vintage"]
+    },
+    {
+      "name": "Caveat",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/caveat/Caveat%5Bwght%5D.ttf",
+      "fontVersion": 2,
+      "displayName": "Caveat (Handwritten)",
+      "fallback": "System",
+      "tags": ["script", "handwritten", "playful"]
+    }
+  ]
+}
