@@ -1,0 +1,195 @@
+{
+  "id": "grid-vr",
+  "name": "Grid VR",
+  "description": "Flexible vertical-priority photo grid collage.",
+  "minImages": 1,
+  "maxImages": 16,
+  "tools": [
+    "instagram-post"
+  ],
+  "tags": [
+    "grid",
+    "collage",
+    "photos",
+    "dynamic",
+    "vertical"
+  ],
+  "listingPreview": {
+    "uri": "https://raw.githubusercontent.com/devravik/whatsapp-direct-chat-tools-assets/refs/heads/main/assets/template-engine/template-samples/grid-vr.png",
+    "variantsByImageCount": {
+      "1": "https://raw.githubusercontent.com/devravik/whatsapp-direct-chat-tools-assets/refs/heads/main/assets/template-engine/template-samples/grid-vr.png",
+      "2": "https://raw.githubusercontent.com/devravik/whatsapp-direct-chat-tools-assets/refs/heads/main/assets/template-engine/template-samples/grid-vr.png",
+      "3": "https://raw.githubusercontent.com/devravik/whatsapp-direct-chat-tools-assets/refs/heads/main/assets/template-engine/template-samples/hrl-grid.png",
+      "4": "https://raw.githubusercontent.com/devravik/whatsapp-direct-chat-tools-assets/refs/heads/main/assets/template-engine/template-samples/hrl-grid.png",
+      "5": "https://raw.githubusercontent.com/devravik/whatsapp-direct-chat-tools-assets/refs/heads/main/assets/template-engine/template-samples/hrl-grid-strip.png",
+      "6": "https://raw.githubusercontent.com/devravik/whatsapp-direct-chat-tools-assets/refs/heads/main/assets/template-engine/template-samples/hrl-grid-strip.png"
+    },
+    "bgColor": "#14532D",
+    "accentColor": "#22C55E",
+    "textColor": "#ECFDF5",
+    "label": "GRID VR"
+  },
+  "groups": [
+    {
+      "id": "grid",
+      "label": "Photo Grid"
+    }
+  ],
+  "content": {
+    "type": "container",
+    "key": "poster",
+    "group": "grid",
+    "style": {
+      "bg": {
+        "value": "#FFFFFF",
+        "editable": true,
+        "key": "posterBg",
+        "label": "Background",
+        "group": "grid"
+      },
+      "bgImageUrl": {
+        "value": "",
+        "editable": true,
+        "key": "posterBgImageUrl",
+        "label": "Background Image URL",
+        "group": "grid"
+      },
+      "bgImageSlot": {
+        "value": -1,
+        "editable": true,
+        "key": "posterBgImageSlot",
+        "label": "Background Image Slot",
+        "group": "grid",
+        "min": -1,
+        "max": 15,
+        "step": 1
+      },
+      "bgImageOpacity": {
+        "value": 0.28,
+        "editable": true,
+        "key": "posterBgImageOpacity",
+        "label": "Background Image Opacity",
+        "group": "grid",
+        "min": 0,
+        "max": 1,
+        "step": 0.05
+      },
+      "flex": 1,
+      "overflow": "hidden"
+    },
+    "children": [
+      {
+        "type": "auto-grid",
+        "key": "photoGrid",
+        "group": "grid",
+        "orientation": "vertical",
+        "style": {
+          "margin": {
+            "value": 16,
+            "editable": true,
+            "key": "gridMargin",
+            "label": "Grid Margin",
+            "group": "grid",
+            "min": 0,
+            "max": 48,
+            "step": 2
+          },
+          "borderRadius": {
+            "value": 0,
+            "editable": true,
+            "key": "gridRadius",
+            "label": "Grid Corner Radius",
+            "group": "grid",
+            "min": 0,
+            "max": 40,
+            "step": 2
+          },
+          "gap": {
+            "value": 12,
+            "editable": true,
+            "key": "gridGap",
+            "label": "Grid Gap",
+            "group": "grid",
+            "min": 0,
+            "max": 48,
+            "step": 2
+          },
+          "shadowColor": {
+            "value": "#34495E",
+            "editable": true,
+            "key": "gridImageShadowColor",
+            "label": "Image Shadow Color",
+            "group": "grid"
+          },
+          "defaultBorderWidth": {
+            "value": 2,
+            "editable": true,
+            "key": "gridImageBorderWidth",
+            "label": "Image Border Width",
+            "group": "grid",
+            "min": 0,
+            "max": 16,
+            "step": 1
+          },
+          "defaultBorderColor": {
+            "value": "#FFFFFF",
+            "editable": true,
+            "key": "gridImageBorderColor",
+            "label": "Image Border Color",
+            "group": "grid"
+          },
+          "defaultBorderRadius": {
+            "value": 10,
+            "editable": true,
+            "key": "gridImageBorderRadius",
+            "label": "Image Corner Radius",
+            "group": "grid",
+            "min": 0,
+            "max": 36,
+            "step": 2
+          },
+          "defaultShadowOpacity": {
+            "value": 0.2,
+            "editable": true,
+            "key": "gridImageShadowOpacity",
+            "label": "Image Shadow Opacity",
+            "group": "grid",
+            "min": 0,
+            "max": 1,
+            "step": 0.05
+          },
+          "defaultShadowRadius": {
+            "value": 10,
+            "editable": true,
+            "key": "gridImageShadowRadius",
+            "label": "Image Shadow Blur",
+            "group": "grid",
+            "min": 0,
+            "max": 32,
+            "step": 1
+          },
+          "defaultShadowOffsetX": {
+            "value": 0,
+            "editable": true,
+            "key": "gridImageShadowOffsetX",
+            "label": "Image Shadow Offset X",
+            "group": "grid",
+            "min": -24,
+            "max": 24,
+            "step": 1
+          },
+          "defaultShadowOffsetY": {
+            "value": 6,
+            "editable": true,
+            "key": "gridImageShadowOffsetY",
+            "label": "Image Shadow Offset Y",
+            "group": "grid",
+            "min": -24,
+            "max": 24,
+            "step": 1
+          }
+        }
+      }
+    ]
+  }
+}

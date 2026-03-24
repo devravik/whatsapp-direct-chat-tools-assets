@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "templates": [
+    {
+      "id": "birthday-mosaic-card-v2",
+      "version": 2,
+      "url": "https://raw.githubusercontent.com/devravik/whatsapp-direct-chat-tools-assets/refs/heads/main/definitions/birthday-mosaic-card-v2.json"
+    }
+  ]
+}

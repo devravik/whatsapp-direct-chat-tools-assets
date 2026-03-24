@@ -1,0 +1,271 @@
+{
+  "id": "birthday-mosaic-card",
+  "name": "Birthday Mosaic Card",
+  "description": "8-photo grid with a scalloped birthday card floating in the centre.",
+  "minImages": 4,
+  "maxImages": 8,
+  "tools": ["instagram-post"],
+  "tags": ["birthday", "celebration", "card", "mosaic", "scallop", "kids"],
+  "listingPreview": {
+    "uri": "https://raw.githubusercontent.com/devravik/whatsapp-direct-chat-tools-assets/refs/heads/main/assets/template-engine/template-samples/birthday-mosaic-card.png.png",
+    "bgColor": "#312E81",
+    "accentColor": "#F59E0B",
+    "textColor": "#FDF4FF",
+    "label": "BIRTHDAY"
+  },
+
+  "groups": [
+    { "id": "grid",    "label": "Photo Grid" },
+    { "id": "card",    "label": "Birthday Card" },
+    { "id": "title",   "label": "Greeting"     },
+    { "id": "message", "label": "Message"      }
+  ],
+
+  "content": {
+    "type": "container",
+    "key": "poster",
+    "group": "grid",
+    "style": {
+      "bg": {
+        "value": "#FFFFFF",
+        "editable": true,
+        "key": "posterBg",
+        "label": "Background",
+        "group": "grid"
+      },
+      "flex": 1,
+      "overflow": "hidden"
+    },
+    "children": [
+
+      {
+        "type": "container",
+        "key": "photoGrid",
+        "group": "grid",
+        "style": {
+          "flex": 1,
+          "flexDirection": "column",
+          "overflow": "hidden",
+          "margin": {
+            "value": 0,
+            "editable": true,
+            "key": "gridMargin",
+            "label": "Grid Margin",
+            "group": "grid",
+            "min": 0,
+            "max": 48,
+            "step": 2
+          },
+          "borderRadius": {
+            "value": 0,
+            "editable": true,
+            "key": "gridRadius",
+            "label": "Grid Corner Radius",
+            "group": "grid",
+            "min": 0,
+            "max": 32,
+            "step": 2
+          },
+          "gap": {
+            "value": 4,
+            "editable": true,
+            "key": "gridGap",
+            "label": "Grid Gap",
+            "group": "grid",
+            "min": 0,
+            "max": 16,
+            "step": 1
+          }
+        },
+        "children": [
+
+          {
+            "type": "container",
+            "style": {
+              "flex": 1,
+              "flexDirection": "row",
+              "gap": { "value": 4, "editable": true, "key": "gridGap", "label": "Grid Gap", "group": "grid", "min": 0, "max": 16, "step": 1 }
+            },
+            "children": [
+              { "type": "image", "slotIndex": 0 },
+              { "type": "image", "slotIndex": 1 },
+              { "type": "image", "slotIndex": 2 }
+            ]
+          },
+
+          {
+            "type": "container",
+            "style": {
+              "flex": 1,
+              "flexDirection": "row",
+              "gap": { "value": 4, "editable": true, "key": "gridGap", "label": "Grid Gap", "group": "grid", "min": 0, "max": 16, "step": 1 }
+            },
+            "children": [
+              { "type": "image", "slotIndex": 3 },
+              { "type": "container", "style": { "flex": 1 }, "children": [] },
+              { "type": "image", "slotIndex": 4 }
+            ]
+          },
+
+          {
+            "type": "container",
+            "style": {
+              "flex": 1,
+              "flexDirection": "row",
+              "gap": { "value": 4, "editable": true, "key": "gridGap", "label": "Grid Gap", "group": "grid", "min": 0, "max": 16, "step": 1 }
+            },
+            "children": [
+              { "type": "image", "slotIndex": 5 },
+              { "type": "image", "slotIndex": 6 },
+              { "type": "image", "slotIndex": 7 }
+            ]
+          }
+
+        ]
+      },
+
+      {
+        "type": "absolute-fill",
+        "style": {
+          "alignItems": "center",
+          "justifyContent": "center"
+        },
+        "children": [
+          {
+            "type": "shape",
+            "shape": "scallop",
+            "key": "birthdayCard",
+            "group": "card",
+            "style": {
+              "fill": {
+                "value": "#FFFFFF",
+                "editable": true,
+                "key": "cardFill",
+                "label": "Card Color",
+                "group": "card"
+              },
+              "width": {
+                "value": 310,
+                "editable": true,
+                "key": "cardWidth",
+                "label": "Card Width",
+                "group": "card",
+                "min": 180,
+                "max": 420,
+                "step": 10
+              },
+              "height": {
+                "value": 320,
+                "editable": true,
+                "key": "cardHeight",
+                "label": "Card Height",
+                "group": "card",
+                "min": 180,
+                "max": 420,
+                "step": 10
+              },
+              "shadow": "medium"
+            },
+            "children": [
+
+              {
+                "type": "text",
+                "key": "greetingLine1",
+                "group": "title",
+                "label": "Greeting – Line 1",
+                "defaultValue": "Happy",
+                "maxLength": 24,
+                "defaults": {
+                  "color": "#C4704F",
+                  "size": 38,
+                  "fontFamily": "Pacifico"
+                },
+                "adjustsFontSizeToFit": true,
+                "minimumFontScale": 0.5,
+                "numberOfLines": 1,
+                "style": { "fontWeight": "400" }
+              },
+
+              {
+                "type": "container",
+                "style": {
+                  "flexDirection": "row",
+                  "alignItems": "center",
+                  "gap": 6
+                },
+                "children": [
+                  {
+                    "type": "shape",
+                    "shape": "heart",
+                    "style": {
+                      "fill": {
+                        "value": "#C4704F",
+                        "editable": true,
+                        "key": "heartColor",
+                        "label": "Heart Color",
+                        "group": "card"
+                      },
+                      "width": 18,
+                      "height": 16
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "key": "greetingLine2",
+                    "group": "title",
+                    "label": "Greeting – Line 2",
+                    "defaultValue": "Birthday",
+                    "maxLength": 24,
+                    "defaults": {
+                      "color": "#C4704F",
+                      "size": 38,
+                      "fontFamily": "Pacifico"
+                    },
+                    "adjustsFontSizeToFit": true,
+                    "minimumFontScale": 0.5,
+                    "numberOfLines": 1,
+                    "style": { "fontWeight": "400" }
+                  },
+                  {
+                    "type": "shape",
+                    "shape": "heart",
+                    "style": {
+                      "fill": "#C4704F",
+                      "width": 18,
+                      "height": 16
+                    }
+                  }
+                ]
+              },
+
+              {
+                "type": "text",
+                "key": "message",
+                "group": "message",
+                "label": "Message",
+                "defaultValue": "Wishing the happiest birthday\nto the most adorable\nlittle girl!",
+                "maxLength": 150,
+                "defaults": {
+                  "color": "#5A5A5A",
+                  "size": 13,
+                  "fontFamily": "Inter"
+                },
+                "adjustsFontSizeToFit": true,
+                "minimumFontScale": 0.6,
+                "numberOfLines": 5,
+                "style": {
+                  "fontWeight": "400",
+                  "letterSpacing": 0.2,
+                  "marginTop": 8,
+                  "width": "100%"
+                }
+              }
+
+            ]
+          }
+        ]
+      }
+
+    ]
+  }
+}

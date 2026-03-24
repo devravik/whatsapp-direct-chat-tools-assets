@@ -1,0 +1,94 @@
+{
+  "id": "moodboard-polaroid-mosaic",
+  "name": "Polaroid Moodboard",
+  "description": "Overlapping polaroid-style collage with soft shadows and adjustable spacing.",
+  "minImages": 3,
+  "maxImages": 5,
+  "tools": ["instagram-post"],
+  "tags": ["collage", "moodboard", "polaroid", "overlap", "photos"],
+
+  "groups": [
+    { "id": "container", "label": "Poster" },
+    { "id": "mosaic",    "label": "Images" }
+  ],
+
+  "colorSets": [
+    { "id": "neutral", "colors": ["#FFFFFF", "#000000", "#E5E7EB", "#111827"] },
+    { "id": "warm",    "colors": ["#FFFFFF", "#000000", "#F1EAE3", "#7C3E2D"] },
+    { "id": "cool",    "colors": ["#FFFFFF", "#000000", "#E6F1F5", "#0F3B57"] }
+  ],
+  "defaultColorSet": "warm",
+  "listingPreview": {
+    "bgColor": "#E7D8C9",
+    "accentColor": "#7C3E2D",
+    "textColor": "#1F2937",
+    "label": "POLAROID"
+  },
+
+  "content": {
+    "type": "container",
+    "key": "poster",
+    "group": "container",
+    "style": {
+      "bg": {
+        "value": "#F4F1ED",
+        "editable": true,
+        "key": "posterBg",
+        "label": "Background",
+        "group": "container"
+      },
+      "flex": 1,
+      "justifyContent": "center",
+      "overflow": "hidden",
+      "padding": {
+        "value": 16,
+        "editable": true,
+        "key": "posterPadding",
+        "label": "Padding",
+        "group": "container",
+        "min": 0,
+        "max": 36,
+        "step": 2
+      },
+      "borderRadius": {
+        "value": 18,
+        "editable": true,
+        "key": "posterRadius",
+        "label": "Corner Radius",
+        "group": "container",
+        "min": 0,
+        "max": 40,
+        "step": 2
+      }
+    },
+    "children": [
+      {
+        "type": "mosaic-grid",
+        "key": "polaroidMosaic",
+        "group": "mosaic",
+        "style": {
+          "gap": {
+            "value": 10,
+            "editable": true,
+            "key": "mosaicGap",
+            "label": "Image Gap",
+            "group": "mosaic",
+            "min": 0,
+            "max": 24,
+            "step": 1
+          },
+          "marginV": 6,
+          "shadowColor": "#2F2F2F",
+          "defaultBorderWidth": 14,
+          "defaultBorderColor": "#FFFFFF",
+          "defaultBorderRadius": 6,
+          "defaultShadowOpacity": 0.35,
+          "defaultShadowRadius": 16,
+          "defaultShadowOffsetX": 0,
+          "defaultShadowOffsetY": 8
+        }
+      }
+    ]
+  }
+}
+
